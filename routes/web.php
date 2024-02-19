@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuLevelController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,8 @@ Route::post('/login', [LoginController::class, 'login'])->name('login.store');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register.index');
 Route::post('/register/store', [RegisterController::class, 'register'])->name('register.store');
+
+Route::get('/test-1', [TestController::class, 'first'])->name('test.first.index');
 
 
 Route::prefix('management')->group(function () {

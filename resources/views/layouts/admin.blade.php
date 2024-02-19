@@ -53,7 +53,11 @@
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
-
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('test.first.index') }}">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Nomor 1</span></a>
+        </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ route('menu.level.index') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
