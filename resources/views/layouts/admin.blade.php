@@ -59,6 +59,11 @@
                 <span>Nomor 1</span></a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="{{ route('test.second.index') }}">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Nomor 2</span></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('menu.level.index') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Menu Level</span></a>
@@ -74,11 +79,6 @@
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
 
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
     </ul>
     <!-- End of Sidebar -->
 
@@ -91,29 +91,24 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                <!-- Sidebar Toggle (Topbar) -->
-                <form class="form-inline">
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
 
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                            aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
-                            </a>
-                        </div>
+                        <div class="dropdown">
+                            <div class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-800 small">{{auth()->user()->email}}</span>
+                            </div>
+                            <ul class="dropdown-menu p-3">
+                              <li>  
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                    <button class="btn btn-primary w-100" type="submit">Logout</button>
+                                </form>
+                            </li>
+                            </ul>
+                          </div>
                     </li>
 
                 </ul>
@@ -146,29 +141,6 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-            <form action="/logout" method="post">
-                @csrf
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-primary" type="submit">Logout</button>
-            </form>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <!--begin::Javascript-->
 <script type="text/javascript" src="{{ asset('assets/js/plugins.bundle.js')}}"></script>

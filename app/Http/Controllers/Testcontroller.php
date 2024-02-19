@@ -13,4 +13,8 @@ class TestController extends Controller
         return view('test.first');
     }
 
+    public function second(){
+        return view('test.second');
+    }
+
 }
