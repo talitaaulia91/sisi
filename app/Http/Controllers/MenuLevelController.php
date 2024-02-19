@@ -36,7 +36,7 @@ class MenuLevelController extends Controller
         $request->validate([
             'level'=>'required',
         ],[
-            'level.required' => 'username wajib diisi',
+            'level.required' => 'level wajib diisi',
         ]);
 
         DB::transaction(function () use ($request) {
@@ -56,7 +56,7 @@ class MenuLevelController extends Controller
         $request->validate([
             'level'=>'required',
         ],[
-            'level.required' => 'username wajib diisi',
+            'level.required' => 'level wajib diisi',
         ]);
 
         DB::transaction(function () use ($request) {

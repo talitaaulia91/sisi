@@ -16,7 +16,14 @@ class Menu extends Authenticatable
 
     protected $table = 'menus';
 
-    public function menu()
+    protected $fillable = [
+        'level_id',
+        'menu_name',
+        'menu_link',
+        'menu_icon'
+    ];
+
+    public function level()
     {
         return $this->belongsTo(MenuLevel::class);
     }

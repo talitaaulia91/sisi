@@ -32,4 +32,10 @@ Route::prefix('management')->group(function () {
     Route::get('/menu-level/edit/{id}', [MenuLevelController::class, 'edit'])->name('menu.level.edit');
     Route::post('/menu-level/update', [MenuLevelController::class, 'update'])->name('menu.level.update');
     Route::post('/menu-level/delete', [MenuLevelController::class, 'delete'])->name('menu.level.delete');
+
+    Route::get('/menu/create', [MenuController::class, 'create'])->name('menu.create');
+    Route::post('/menu/store', [MenuController::class, 'store'])->name('menu.store');
+    Route::get('/menu/edit/{id}', [MenuController::class, 'edit'])->name('menu.edit');
+    Route::post('/menu/update', [MenuController::class, 'update'])->name('menu.update');
+    Route::post('/menu/delete', [MenuController::class, 'delete'])->name('menu.delete');
 });
