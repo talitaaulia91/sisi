@@ -24,12 +24,12 @@
     <!--end::Fonts-->
 
     @yield('addbeforecss')
-    <link href="../assets/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/admin/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/admin/custom-appadmin.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/custom.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/admin/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/admin/custom-appadmin.css')}}" rel="stylesheet" type="text/css" />
     @yield('addaftercss')
 </head>
 <!--end::Head-->
@@ -48,32 +48,24 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand --> 
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('menu.index') }}">
         </a>
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
-        <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ route('menu.level.index') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
+                <span>Menu Level</span></a>
         </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item active">
-            <a class="nav-link" href="/pelanggan">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Pelanggan</span></a>
-        </li>
-
-        <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="/tagihan">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Tagihan</span></a>
+            <a class="nav-link" href="{{ route('menu.index') }}">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Menu</span></a>
         </li>
+       
+
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -109,7 +101,6 @@
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{auth()->user()->name}}</span>
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -176,10 +167,10 @@
 </div>
 
 <!--begin::Javascript-->
-<script type="text/javascript" src="../assets/js/plugins.bundle.js"></script>
-<script type="text/javascript" src="../assets/js/scripts.bundle.js"></script>
-<script src="../assets/js/sb-admin-2.min.js"></script>
-<script src="/assets/js/admin/tinymce/tinymce.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('assets/js/plugins.bundle.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/scripts.bundle.js')}}"></script>
+<script src="{{ asset('assets/js/sb-admin-2.min.js')}}"></script>
+<script src="{{ asset('assets/js/admin/tinymce/tinymce.min.js')}}" type="text/javascript"></script>
 <script
     src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-jquery@2.0.0/dist/tinymce-jquery.min.js"
     integrity="sha256-zSxkT44m7IPahXtVtJxKACYuaEVHUcbU6+qtrVPbNvo="
@@ -210,8 +201,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
 ></script>
-<script type="text/javascript" src="../assets/js/admin/datatables.bundle.js"></script>
-<script type="text/javascript" src="../assets/js/generalfunction.js"></script>
+<script type="text/javascript" src="{{ asset('assets/js/admin/datatables.bundle.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/generalfunction.js')}}"></script>
 
 @yield('addafterjs')
 </body>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('menu_name')->nullable();
             $table->string('menu_link')->nullable();
             $table->string('menu_icon')->nullable();
-            $table->string('parent_Id')->nullable();
+            $table->string('parent_id')->nullable();
             $table->timestamps();
 
             $table->foreign('level_id')->on('menu_levels')->references('id');

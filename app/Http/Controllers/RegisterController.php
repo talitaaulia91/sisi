@@ -32,7 +32,7 @@ class RegisterController extends Controller
         ]);
 
         DB::transaction(function () use ($request) {
-            User::create($request->except('actionform', 'id'));
+            User::create($request);
         });
 
         $result = [

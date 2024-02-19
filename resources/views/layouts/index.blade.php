@@ -6,7 +6,6 @@
     <title>Sinergi Informatika Semen indonesia</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    {{-- <x-meta.content-security-policy /> --}}
     <link rel="shortcut icon" href="/favicon.ico" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
@@ -25,11 +24,11 @@
     <!--end::Fonts-->
 
     @yield('addbeforecss')
-    <link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/admin/datatables.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/admin/custom-appadmin.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/custom.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/admin/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/admin/custom-appadmin.css')}}" rel="stylesheet" type="text/css" />
     @yield('addaftercss')
 </head>
 <!--end::Head-->
@@ -79,8 +78,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
 ></script>
-<script type="text/javascript" src="../assets/js/admin/datatables.bundle.js"></script>
-<script type="text/javascript" src="../assets/js/generalfunction.js"></script>
+<script type="text/javascript" src="{{ asset('assets/js/admin/datatables.bundle.js')}}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/generalfunction.js')}}"></script>
 
 @yield('addafterjs')
 </body>
