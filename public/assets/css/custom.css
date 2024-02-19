@@ -1,0 +1,371 @@
+#genelator-main_title {
+    margin: 0;
+    padding: 0 1rem 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #434349;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#userPic {
+    align-self: center;
+    height: 37px;
+    border-radius: 50%;
+    border-color: 1px aliceblue solid;
+}
+
+.kt-header__topbar-welcome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: 0 0.55rem 0 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #636177;
+}
+
+.gray-shadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888 !important;
+}
+
+.custom-breadcrumb-separator {
+    font-size: 0.7rem;
+    color: #dbdce7;
+}
+
+.kt-section .kt-section__content.kt-section__content--solid {
+    border-left-color: #ffb822;
+    color: #333;
+}
+
+input.datepicker {
+    width: 100%;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+table.dataTable tr.dtrg-group td {
+    background-color: #f3f3f3;
+}
+
+.dataTables_wrapper .dataTable th {
+    vertical-align: middle;
+}
+
+.dataTables_wrapper .dataTable td {
+    vertical-align: top;
+}
+
+.kt-link {
+    display: block;
+}
+
+.kt-badge--magenta {
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+}
+
+#calendar-magang .theme--light.v-application {
+    background-color: transparent;
+}
+
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+    color: #ddd !important;
+}
+
+thead{
+    font-weight: 600;
+}
+
+/* Cubic Bezier Transition */
+
+
+/***
+New Profile Page
+***/
+
+.profile-sidebar {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.profile-content {
+    overflow: hidden;
+}
+
+
+/* PROFILE SIDEBAR */
+
+.profile-sidebar-portlet {
+    padding: 30px 0 0 0 !important;
+}
+
+.profile-userpic {
+    margin: 0 auto;
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 114px;
+    height: 114px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.profile-usertitle {
+    text-align: center;
+    margin-top: 1vmin;
+    padding: 0px 8px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: calc(100% + 2px);
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 76%;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+    margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+    margin-right: 0;
+}
+
+.profile-userbuttons button {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+}
+
+.profile-usermenu {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+}
+
+.profile-stat {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-stat-title {
+    color: #7f90a4;
+    font-size: 25px;
+    text-align: center;
+}
+
+.profile-stat-text {
+    color: #5b9bd1;
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.profile-desc-title {
+    color: #7f90a4;
+    font-size: 90%;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.profile-desc-text {
+    color: #7e8c9e;
+    font-size: 14px;
+}
+
+.profile-desc-link i {
+    font-size: 90%;
+    color: #abb6c4;
+}
+
+.profile-desc-link a {
+    font-size: 90%;
+    font-weight: 600;
+    color: #5b9bd1;
+}
+
+
+/* END PROFILE SIDEBAR */
+
+
+/* RESPONSIVE MODE */
+
+@media (max-width: 991px) {
+
+    /* 991px */
+    /* 991px */
+    .profile-sidebar {
+        float: none;
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .profile-sidebar>.portlet {
+        margin-bottom: 20px;
+    }
+
+    .profile-content {
+        overflow: visible;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .profile-userpic img {
+        width: 114px;
+        height: 114px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-userpic img {
+        width: 114px;
+        height: 114px;
+    }
+
+    .profile-usertitle {
+        margin-top: 1vmin;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .profile-userpic img {
+        width: 41%;
+        height: 41%;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    .profile-userpic img {
+        width: 21%;
+        height: 21%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .profile-userpic img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile-usertitle {
+        margin-top: 0.7vmin;
+    }
+
+    .profile-usertitle-name {
+        color: #5a7391;
+        font-size: calc(90% + 2px);
+        font-weight: 600;
+        margin-bottom: 7px;
+        line-height: 1.2;
+    }
+
+    .profile-desc-title,
+    .profile-desc-link a {
+        font-size: 76%;
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1440px) {
+    .profile-usertitle-job {
+        font-size: 12px;
+    }
+
+    .profile-userpic img {
+        width: 36%;
+        height: 36%;
+    }
+
+    .profile-usertitle-name {
+        color: #5a7391;
+        font-size: calc(90% + 2px);
+        font-weight: 600;
+        margin-bottom: 7px;
+        line-height: 1.2;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    .profile-userpic img {
+        width: 29%;
+        height: 29%;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    .profile-userpic img {
+        width: 23%;
+        height: 23%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .profile-userpic img {
+        width: 21%;
+        height: 21%;
+    }
+}

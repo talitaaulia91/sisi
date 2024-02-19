@@ -1,0 +1,227 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+#multi-step-form-container {
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #4361ee;
+    background-color: #4361ee;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    border: 1px solid #0e9594;
+    background-color: #0e9594;
+}
+
+.mt-3 {
+    margin-top: 2rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.form-stepper {
+    counter-reset: section;
+    margin-bottom: 40px;
+}
+
+.form-stepper .form-stepper-circle svg {
+    display: none;
+}
+
+.form-stepper-horizontal {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .form-stepper-horizontal {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+ul.form-stepper>li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+
+.form-stepper-horizontal>li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+}
+
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 4px;
+    content: "";
+    margin: 0 37px;
+    top: 50%;
+}
+
+.form-stepper-horizontal li:after {
+    background-color: #d9d9d9;
+}
+
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+
+ul.form-stepper li .form-stepper-circle {
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+}
+
+.form-stepper .label {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle {
+    background-color: var(--bs-primary);
+}
+
+.form-stepper .form-stepper-active .label {
+    font-weight: bold;
+}
+
+
+.form-stepper .form-stepper-completed .form-stepper-circle {
+    background-color: var(--secondary-25);
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle span {
+    display: none;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle svg {
+    display: inline;
+}
+
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+    background-color: var(--secondary-alt-400);
+}
+
+.title-topten {
+    color: var(--bumn-01, #1F2855);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.logo-topten {
+    height: 50px;
+    border-radius: 8px 0px 0px 8px;
+    background: #F5F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+}
+
+.name-topten {
+    border-radius: 0px 8px 8px 0px;
+    background-color: #FFF;
+    color: var(--neutral-900, #2B2B2B);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    padding: 8px 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    max-height: 50px;
+    width: 100%;
+}
+
+.star-topten {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 6px;
+    color: #7E8299;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 360px) {
+    .name-topten {
+        font-size: 16px;
+    }
+
+    .star-topten {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .name-topten {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .star-topten {
+        font-size: 24px;
+    }
+}
